@@ -1,8 +1,8 @@
 .App {
   position: relative;
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 40px 24px 64px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 64px;
 }
 
 main {

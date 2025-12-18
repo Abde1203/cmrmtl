@@ -9,6 +9,31 @@
   animation: floatIn 0.6s ease forwards;
 }
 
+.InfoStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(31, 111, 178, 0.16);
+  color: var(--accent-strong);
+}
+
+.InfoStrip div {
+  display: grid;
+  gap: 6px;
+}
+
+.InfoStrip strong {
+  font-size: 0.95rem;
+}
+
+.InfoStrip span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .Content h2 {
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
   font-weight: 600;
@@ -106,6 +131,68 @@
   background: var(--accent-strong);
 }
 
+.ListGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.ListCard {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.StepList {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+}
+
+.InsuranceBanner {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(31, 111, 178, 0.18);
+  display: grid;
+  gap: 6px;
+  color: var(--accent-strong);
+}
+
+.InsuranceBanner span {
+  color: var(--muted);
+}
+
+.MapPanel {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  display: grid;
+  gap: 12px;
+}
+
+.MapIframe {
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.map-link {
+  align-self: flex-start;
+  font-weight: 600;
+}
+
 @keyframes floatIn {
   from {
     opacity: 0;
@@ -130,5 +217,9 @@
 @media (max-width: 700px) {
   .Content {
     border-radius: 20px;
+  }
+
+  .InfoStrip {
+    padding: 14px 16px;
   }
 }
