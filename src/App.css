@@ -1,0 +1,11 @@
+.App {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+main {
+  display: grid;
+  gap: 20px;
+}

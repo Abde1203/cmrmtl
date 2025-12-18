@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #15202b;
+  --muted: #5a6b7a;
+  --accent: #1f6fb2;
+  --accent-strong: #144b7a;
+  --accent-soft: #e8f1fb;
+  --panel: #f6f9fc;
+  --paper: #ffffff;
+  --line: rgba(21, 32, 43, 0.12);
+  --shadow: 0 14px 30px rgba(20, 40, 60, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f2f6fa;
+  color: var(--ink);
+}
+
+h1, h2, h3 {
+  font-family: "Source Serif 4", "Times New Roman", serif;
+  letter-spacing: -0.005em;
+}

@@ -1,0 +1,118 @@
+.Header {
+  display: grid;
+  gap: 20px;
+  padding: 24px 0 28px;
+  border-bottom: 2px solid var(--accent-soft);
+  margin-bottom: 20px;
+}
+
+.Header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.8vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 720px;
+}
+
+.Header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.Header__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Header__tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 520px;
+}
+
+.Header button {
+  padding: 10px 18px;
+  border: 1px solid var(--accent);
+  background-color: var(--paper);
+  color: var(--accent-strong);
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: none;
+}
+
+.Header button:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Logo__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  position: relative;
+  border: 1px solid rgba(31, 111, 178, 0.2);
+}
+
+.Logo__mark::before,
+.Logo__mark::after {
+  content: "";
+  position: absolute;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.Logo__mark::before {
+  width: 20px;
+  height: 4px;
+  top: 18px;
+  left: 10px;
+}
+
+.Logo__mark::after {
+  width: 4px;
+  height: 20px;
+  top: 10px;
+  left: 18px;
+}
+
+.Logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.Logo__name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-strong);
+  text-transform: uppercase;
+}
+
+.Logo__sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .Header__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
