@@ -22,7 +22,12 @@ const Header: React.FC<HeaderProps> = ({ language, toggleLanguage }) => {
               </div>
             </div>
             <div className='Header__actions'>
-              <a className='Header__cta' href='#appointment'>
+              <a
+                className='Header__cta'
+                href='https://xxx.xxx.xxx'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 {language === 'fr' ? 'Prendre rendez-vous' : 'Book an appointment'}
               </a>
               <button onClick={toggleLanguage}>
