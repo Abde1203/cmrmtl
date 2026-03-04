@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ language, toggleLanguage }) => {
             <div className='Header__actions'>
               <a
                 className='Header__cta'
-                href='https://xxx.xxx.xxx'
+                href='https://qc.pomelo.health/cmdree/login#/patient-triage'
                 target='_blank'
                 rel='noopener noreferrer'
               >
