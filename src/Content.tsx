@@ -24,9 +24,7 @@ const Content: React.FC<ContentProps> = ({ language }) => {
     noRamq: 'Patients non éligibles',
     noRamqText: 'Les patients couverts par la RAMQ ne sont pas éligibles et seront refusés.',
     noInsurancePrice: 'Tarifs sans assurance',
-    noInsurancePriceText: 'Pour les patients sans couverture PFSI, sans assurance étudiante admissible et sans RAMQ :',
-    consultation: '285$ par consultation',
-    followUp: '285$ par suivi',
+    noInsurancePriceText: 'Nous chargeons selon la grille tarifaire du FMOQ pour les patients sans couverture du PFSI.',
     notPrivate: 'Veuillez noter : ceci n’est pas une clinique privée. Nous n’offrons pas de rendez-vous aux patients avec une assurance provinciale (RAMQ ou autre) souhaitant payer pour une consultation.',
     appointment: 'Prendre un rendez-vous',
     appointmentText: 'Veuillez prendre rendez-vous en utilisant le lien ci-dessous ou par téléphone.',
@@ -71,9 +69,7 @@ const Content: React.FC<ContentProps> = ({ language }) => {
     noRamq: 'Ineligible Patients',
     noRamqText: 'Patients covered by RAMQ are not eligible and will be refused.',
     noInsurancePrice: 'Pricing for Uninsured Patients',
-    noInsurancePriceText: 'For patients without IFHP coverage, without eligible student insurance, and without RAMQ:',
-    consultation: '$285 per consultation',
-    followUp: '$285 per follow-up',
+    noInsurancePriceText: 'We charge according to the FMOQ fee schedule for patients without IFHP coverage.',
     notPrivate: 'Please note: This is not a private clinic. It is unavailable to patients with a provincial healthcare insurance (RAMQ or other) who wish to pay for a consultation.',
     appointment: 'Book an Appointment',
     appointmentText: 'Please book an appointment using the link below or by phone.',
@@ -145,12 +141,6 @@ const Content: React.FC<ContentProps> = ({ language }) => {
       <div className='Content'>
         <h2>{content.noInsurancePrice}</h2>
         <p>{content.noInsurancePriceText}</p>
-        <div className='pricing'>
-          <ul>
-            <li>{content.consultation}</li>
-            <li>{content.followUp}</li>
-          </ul>
-        </div>
         <p className='disclaimer'>{content.notPrivate}</p>
       </div>
 
