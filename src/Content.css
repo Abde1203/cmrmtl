@@ -29,6 +29,12 @@
   font-size: 0.95rem;
 }
 
+.InfoStrip .phone-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .InfoStrip span {
   font-size: 0.9rem;
   color: var(--muted);
@@ -45,6 +51,14 @@
   line-height: 1.6;
   font-size: 1.05rem;
   color: var(--muted);
+}
+
+.Content__warning {
+  font-size: clamp(1.2rem, 2.8vw, 1.6rem);
+  font-weight: 800;
+  color: #a11c1c;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .Content .pricing {
@@ -129,6 +143,12 @@
 
 .Content .cta-link:hover {
   background: var(--accent-strong);
+}
+
+.Content .phone-link {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .ListGrid {
