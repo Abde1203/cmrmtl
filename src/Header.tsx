@@ -7,17 +7,19 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ language, toggleLanguage }) => {
+  const logoSubline = language === 'fr' ? 'Clinique des nouveaux arrivants' : 'Newcomer medical clinic';
+
   return (
     <>
       <div className='HeaderBar'>
         <div className='Container'>
           <div className='Header__top'>
             <div className='Header__brand'>
-              <div className='Logo' aria-hidden='true'>
-                <span className='Logo__mark' />
+              <div className='Logo'>
+                <span className='Logo__badge'>CMR</span>
                 <div className='Logo__text'>
-                  <span className='Logo__name'>CMR</span>
-                  <span className='Logo__sub'>Montreal</span>
+                  <span className='Logo__name'>CMR Montreal</span>
+                  <span className='Logo__sub'>{logoSubline}</span>
                 </div>
               </div>
             </div>
