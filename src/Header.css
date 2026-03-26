@@ -93,34 +93,40 @@
 }
 
 .Logo__mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: var(--accent-soft);
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #eef7fc 0%, #dceefb 55%, #d9f3ea 100%);
   position: relative;
-  border: 1px solid rgba(31, 111, 178, 0.2);
+  border: 1px solid rgba(31, 111, 178, 0.16);
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
 }
 
 .Logo__mark::before,
 .Logo__mark::after {
   content: "";
   position: absolute;
-  background: var(--accent);
-  border-radius: 2px;
 }
 
 .Logo__mark::before {
-  width: 20px;
-  height: 4px;
-  top: 18px;
-  left: 10px;
+  width: 24px;
+  height: 24px;
+  top: 7px;
+  left: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #ffffff 24%, #72b7d6 25%, #2b84bf 100%);
+  opacity: 0.98;
 }
 
 .Logo__mark::after {
-  width: 4px;
-  height: 20px;
-  top: 10px;
-  left: 18px;
+  width: 22px;
+  height: 22px;
+  right: -3px;
+  bottom: -2px;
+  border-radius: 10px 0 14px 0;
+  background: linear-gradient(135deg, rgba(26, 98, 149, 0.12) 0%, rgba(26, 98, 149, 0.45) 100%);
+  transform: rotate(8deg);
 }
 
 .Logo__text {
